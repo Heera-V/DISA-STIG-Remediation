@@ -55,7 +55,8 @@ After executing the PowerShell remediation script, the Windows account lockout s
 
 A subsequent Tenable compliance scan confirmed that WN11-AC-000015 changed from **FAILED** to **PASSED**.
 
-![Final passed Tenable scan](Screenshots/After-Passed/.png)
+![Final passed Tenable scan](Screenshots/After-Passed.png)
+
 
 
 | Check | Before | After |
