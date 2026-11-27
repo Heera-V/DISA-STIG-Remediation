@@ -26,7 +26,15 @@ This policy applies to the **WinRM client**, not the separately configurable Win
 
 The initial Tenable compliance scan reported **FAILED** for audit **1.173 / WN11-CC-000330** on the Windows 11 VM.
 
+### Initial Tenable Scan — FAILED
+
+![Initial Tenable failed audit](Screenshots/Tenable-Failed.png)
+
 In Local Group Policy Editor, the policy was **Not Configured**, whereas the STIG requires an explicit **Disabled** state.
+
+### Initial Group Policy Configuration — Not Configured
+
+![Original Group Policy setting](Screenshots/GroupPolicy-Before.png)
 
 **Navigation:**
 
@@ -40,11 +48,23 @@ In Local Group Policy Editor, the policy was **Not Configured**, whereas the STI
 4. Select **Apply**, then **OK**.
 5. Rerun Tenable scan `STIG-Scan-HV` and filter by `WN11-CC-000330`.
 
+### Manual Group Policy Remediation — Disabled
+
+![Group Policy manual remediation](Screenshots/GroupPolicy-Manual-Remediation.png)
+
 **Result:** Tenable **PASSED** at **3:49 PM**, November 27, 2026.
+
+### Tenable Verification After Manual Remediation — PASSED
+
+![Tenable passed following manual remediation](Screenshots/Tenable-Passed-Manual-Remediation.png)
 
 ## Rollback Validation — FAILED
 
 To prove the remediation was reversible and that the policy change affected compliance, the configuration was restored to **Not Configured**. A subsequent Tenable scan returned **FAILED** at **4:10 PM**, November 27, 2026.
+
+### Tenable Rollback Verification — FAILED
+
+![Tenable failed after rollback](Screenshots/Tenable-Rollback-Failed.png)
 
 ## PowerShell Automated Remediation
 
@@ -80,9 +100,17 @@ New-ItemProperty `
 
 The administrator-run script reported `AllowBasic`, `DWord`, and `0`, followed by **Remediation completed successfully**.
 
+### PowerShell Remediation Execution
+
+![PowerShell remediation execution](Screenshots/PowerShell-Remediation.png)
+
 ## Final Compliance Verification — PASSED
 
 Following PowerShell remediation, the Tenable audit reported **PASSED** on **November 27, 2026, 4:56 PM**.
+
+### Final Tenable Scan — PASSED
+
+![Final Tenable passed finding](Screenshots/Tenable-Passed-Powershell.png)
 
 | Stage | Configuration | Tenable outcome |
 |---|---|---|
@@ -90,38 +118,6 @@ Following PowerShell remediation, the Tenable audit reported **PASSED** on **Nov
 | Manual Group Policy remediation | Disabled | **PASSED** |
 | Rollback | Not Configured | **FAILED** |
 | Automated PowerShell remediation | `AllowBasic = 0` (`REG_DWORD`) | **PASSED** |
-
-## Evidence Screenshots
-
-The seven screenshots below were uploaded and verified in the [Screenshots folder](Screenshots/).
-
-### 1. Initial Tenable finding — FAILED
-
-![Initial Tenable failed audit](Screenshots/Tenable-Failed.png)
-
-### 2. Original Group Policy — Not Configured
-
-![Original Group Policy setting](Screenshots/GroupPolicy-Before.png)
-
-### 3. Manual remediation — Disabled
-
-![Group Policy manual remediation](Screenshots/GroupPolicy-Manual-Remediation.png)
-
-### 4. Tenable verification after manual remediation — PASSED
-
-![Tenable passed following manual remediation](Screenshots/Tenable-Passed-Manual-Remediation.png)
-
-### 5. Rollback validation — FAILED
-
-![Tenable failed after rollback](Screenshots/Tenable-Rollback-Failed.png)
-
-### 6. PowerShell automated remediation — Successful
-
-![PowerShell remediation execution](Screenshots/PowerShell-Remediation.png)
-
-### 7. Final Tenable verification after PowerShell — PASSED
-
-![Final Tenable passed finding](Screenshots/Tenable-Passed-Powershell.png)
 
 ## Skills Demonstrated
 
