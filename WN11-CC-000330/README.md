@@ -93,17 +93,35 @@ Following PowerShell remediation, the Tenable audit reported **PASSED** on **Nov
 
 ## Evidence Screenshots
 
-Seven screenshots were captured for this exercise. The image files are **pending upload** to this directory's `Screenshots/` folder; once available, the following links will become active:
+The seven screenshots below were uploaded and verified in the [Screenshots folder](Screenshots/).
 
-| Evidence | File |
-|---|---|
-| Initial finding | `Screenshots/Tenable-Failed.png` |
-| Original Group Policy | `Screenshots/GroupPolicy-Before.png` |
-| Manual policy remediation | `Screenshots/GroupPolicy-Manual-Remediation.png` |
-| Tenable pass after manual remediation | `Screenshots/Tenable-Passed-Manual-Remediation.png` |
-| Tenable failure after rollback | `Screenshots/Tenable-Rollback-Failed.png` |
-| PowerShell script execution | `Screenshots/PowerShell-Remediation.png` |
-| Final Tenable pass | `Screenshots/Tenable-Passed-Powershell.png` |
+### 1. Initial Tenable finding — FAILED
+
+![Initial Tenable failed audit](Screenshots/Tenable-Failed.png)
+
+### 2. Original Group Policy — Not Configured
+
+![Original Group Policy setting](Screenshots/GroupPolicy-Before.png)
+
+### 3. Manual remediation — Disabled
+
+![Group Policy manual remediation](Screenshots/GroupPolicy-Manual-Remediation.png)
+
+### 4. Tenable verification after manual remediation — PASSED
+
+![Tenable passed following manual remediation](Screenshots/Tenable-Passed-Manual-Remediation.png)
+
+### 5. Rollback validation — FAILED
+
+![Tenable failed after rollback](Screenshots/Tenable-Rollback-Failed.png)
+
+### 6. PowerShell automated remediation — Successful
+
+![PowerShell remediation execution](Screenshots/PowerShell-Remediation.png)
+
+### 7. Final Tenable verification after PowerShell — PASSED
+
+![Final Tenable passed finding](Screenshots/Tenable-Passed-Powershell.png)
 
 ## Skills Demonstrated
 
