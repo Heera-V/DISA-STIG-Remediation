@@ -16,7 +16,7 @@ This Windows 11 DISA STIG remediation project demonstrates assessment, manual Gr
 | Automation | Windows PowerShell ISE 5.1 |
 | Verification date | November 27, 2026 |
 | Final Tenable result | **PASSED — 10:40 PM** |
-| Evidence publication | Screenshots pending GitHub upload |
+| Evidence publication | **All 8 screenshots uploaded and linked** |
 
 ## Security Context
 
@@ -131,9 +131,9 @@ Following script execution, a final `STIG-Scan-HV` compliance scan of Windows 11
 | PowerShell remediation | `MSAOptional = 1` (`REG_DWORD`) | **Successful** |
 | Final compliance rescan | Enabled | **Tenable PASSED** |
 
-## Evidence Upload Status
+## Evidence Verification
 
-The screenshots above are referenced inline beside their corresponding steps, following the repository's established documentation style. **The image files have not yet been verified in this GitHub folder**. Upload them to `Screenshots/` using the referenced filenames so the embedded images render.
+All **8 evidence screenshots** have been uploaded to the `Screenshots/` folder and their filenames have been checked against the inline README image references. No evidence images are missing.
 
 ## Skills Demonstrated
 
