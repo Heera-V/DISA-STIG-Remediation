@@ -15,7 +15,7 @@ This Windows 11 DISA STIG lab documents a failed diagnostic data policy, manual 
 | Target | Windows 11 VM — 10.0.0.6 |
 | Automation | PowerShell ISE 5.1 |
 | Test date | November 27, 2026 |
-| Status | **PowerShell remediation successful; final Tenable verification pending** |
+| Status | **PASSED — final Tenable evidence uploaded** |
 
 ## Security Risk
 
@@ -63,6 +63,10 @@ A rescan of `STIG-Scan-HV` returned **PASSED** for **WN11-CC-000205** on **Novem
 ## Rollback Testing — FAILED
 
 The policy was restored to its original **Not Configured** state before automation was tested.
+
+### Group Policy Rollback — Not Configured
+
+![Group Policy restored to Not Configured](Screenshots/GroupPolicy-Rollback.png)
 
 ### Tenable Verification After Rollback — FAILED
 
@@ -114,11 +118,11 @@ Windows diagnostic data is set to Required.
 
 ![PowerShell remediation successfully executed](Screenshots/PowerShell-Remediation.png)
 
-## Final Tenable Verification — PENDING
+## Final Tenable Verification — PASSED
 
-The script has successfully configured the registry, but the **final Tenable rescan is still pending**. The final screenshot will be placed directly below this section after Tenable confirms **PASSED**.
+The script successfully configured the required registry value. The final Tenable result has been uploaded as **Tenable-Passed-Powershell.png** for audit **1.150 WN11-CC-000205**, documenting the post-automation **PASSED** compliance result.
 
-![Final Tenable result after PowerShell — awaiting scan](Screenshots/Tenable-Passed-Powershell.png)
+![Final Tenable result after PowerShell — PASSED](Screenshots/Tenable-Passed-Powershell.png)
 
 ### Remediation Summary
 
@@ -128,7 +132,7 @@ The script has successfully configured the registry, but the **final Tenable res
 | Manual remediation | Enabled — Send required diagnostic data | **PASSED** |
 | Rollback | Not Configured | **FAILED** |
 | PowerShell remediation | `AllowTelemetry = 1` (`REG_DWORD`) | **Script successful** |
-| Final Tenable verification | Awaiting rescan | **Pending** |
+| Final Tenable verification | `AllowTelemetry = 1` | **PASSED (uploaded evidence)** |
 
 ## Skills Demonstrated
 
