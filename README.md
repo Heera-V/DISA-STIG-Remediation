@@ -17,6 +17,10 @@ Hands-on Windows 11 security hardening portfolio demonstrating DISA STIG complia
 
 **Progress:** 8 of 10 technical remediations completed and documented with Tenable evidence.
 
+## In Progress
+
+- [STIG #9 — WN11-CC-000040: Disable Insecure SMB Guest Logons](WN11-CC-000040/) — manual remediation and rollback verified; PowerShell remediation successful; final Tenable scan and screenshot uploads pending
+
 ## Methodology
 
 1. Scan Windows 11 VM and capture initial Tenable FAILED finding.
