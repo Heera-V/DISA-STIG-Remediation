@@ -14,7 +14,11 @@ Hands-on Windows 11 security hardening portfolio demonstrating DISA STIG complia
 | 6 | [WN11-CC-000330](WN11-CC-000330/) | Disable WinRM Client Basic authentication |
 | 7 | [WN11-CC-000315](WN11-CC-000315/) | Disable Windows Installer elevated privileges |
 
-**Progress:** 7 of 10 technical remediations verified by Tenable. STIG #7 final screenshot upload pending.
+**Progress:** 7 of 10 technical remediations verified by Tenable. STIG #8 PowerShell remediation succeeded; final Tenable verification pending.
+
+## In Progress
+
+- [STIG #8 — WN11-CC-000205: Windows Diagnostic Data](WN11-CC-000205/) — Manual remediation and rollback verified; PowerShell remediation successful; final Tenable scan and screenshot uploads pending
 
 ## Methodology
 
