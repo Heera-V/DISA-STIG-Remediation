@@ -14,12 +14,9 @@ Hands-on Windows 11 security hardening portfolio demonstrating DISA STIG complia
 | 6 | [WN11-CC-000330](WN11-CC-000330/) | Disable WinRM Client Basic authentication |
 | 7 | [WN11-CC-000315](WN11-CC-000315/) | Disable Windows Installer elevated privileges |
 | 8 | [WN11-CC-000205](WN11-CC-000205/) | Configure Windows diagnostic data collection |
+| 9 | [WN11-CC-000040](WN11-CC-000040/) | Disable insecure SMB guest logons |
 
-**Progress:** 8 of 10 technical remediations completed and documented with Tenable evidence.
-
-## In Progress
-
-- [STIG #9 — WN11-CC-000040: Disable Insecure SMB Guest Logons](WN11-CC-000040/) — manual remediation and rollback verified; PowerShell remediation successful; final Tenable scan and screenshot uploads pending
+**Progress:** 9 of 10 technical remediations completed and documented with Tenable evidence.
 
 ## Methodology
 
