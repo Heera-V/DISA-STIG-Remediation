@@ -15,7 +15,7 @@ This project demonstrates identification, manual remediation, rollback validatio
 | Required state | **Disabled** |
 | PowerShell | Windows PowerShell ISE 5.1 |
 | Test date | November 27, 2026 |
-| Status | **PowerShell remediation successful; final Tenable verification pending** |
+| Status | **PASSED — final Tenable evidence uploaded** |
 
 ## Security Risk
 
@@ -114,11 +114,11 @@ Insecure SMB guest logons are disabled by policy.
 
 ![PowerShell remediation output](Screenshots/PowerShell-Remediation.png)
 
-## Final Tenable Verification — PENDING
+## Final Tenable Verification — PASSED
 
-The PowerShell script verified the required registry configuration. The **final Tenable compliance rescan has not yet been provided**, so the final compliance status remains pending.
+The PowerShell script verified the required registry configuration. The final Tenable evidence screenshot has been uploaded for audit **1.116 WN11-CC-000040**, documenting a **PASSED** result after PowerShell remediation.
 
-![Final Tenable scan pending upload](Screenshots/Tenable-Passed-Powershell.png)
+![Final Tenable PASSED after PowerShell remediation](Screenshots/Tenable-Passed-Powershell.png)
 
 ### Before and After Results
 
@@ -128,7 +128,7 @@ The PowerShell script verified the required registry configuration. The **final 
 | Manual remediation | Disabled | **Tenable PASSED** |
 | Rollback | Not Configured | **Tenable FAILED** |
 | PowerShell remediation | `AllowInsecureGuestAuth = 0` (DWORD) | **Script verified** |
-| Final compliance scan | Pending | **Awaiting Tenable verification** |
+| Final compliance scan | `AllowInsecureGuestAuth = 0` (DWORD) | **Tenable PASSED** |
 
 ## Skills Demonstrated
 
