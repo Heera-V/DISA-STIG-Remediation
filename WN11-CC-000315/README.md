@@ -13,7 +13,7 @@ This project demonstrates the identification, manual remediation, rollback testi
 | Target | Windows 11 VM — 10.0.0.6 |
 | PowerShell | Windows PowerShell ISE 5.1 |
 | Date | November 27, 2026 |
-| Status | **PowerShell remediation successful; final Tenable scan pending** |
+| Status | **PASSED — final Tenable verification November 27, 2026, 7:24 PM** |
 
 ## Security Risk
 
@@ -106,11 +106,11 @@ Windows Installer elevated privileges are disabled by policy.
 
 ![PowerShell remediation and verification output](Screenshots/PowerShell-Remediation.png)
 
-## Final Tenable Verification — PENDING
+## Final Tenable Verification — PASSED
 
-The PowerShell script executed successfully and verified the policy registry value. **The final Tenable compliance scan has not yet been supplied or confirmed.** Once the final audit reports **PASSED**, add the screenshot below and update this section.
+The PowerShell script executed successfully and verified the policy registry value. The final `STIG-Scan-HV` audit confirmed **PASSED** for **1.168 WN11-CC-000315** on **November 27, 2026 at 7:24 PM**. The screenshot was provided in the project conversation; its GitHub evidence file is awaiting upload.
 
-![Final Tenable scan after PowerShell — pending upload](Screenshots/Tenable-Passed-Powershell.png)
+![Final Tenable PASSED scan after PowerShell](Screenshots/Tenable-Passed-Powershell.png)
 
 ### Remediation Test Summary
 
@@ -120,7 +120,7 @@ The PowerShell script executed successfully and verified the policy registry val
 | Manual remediation | Disabled | **Tenable PASSED** |
 | Manual rollback | Not Configured | **Tenable FAILED** |
 | PowerShell remediation | `AlwaysInstallElevated = 0` (`DWORD`) | **Script verified** |
-| Final compliance rescan | Pending | **Awaiting Tenable confirmation** |
+| Final compliance rescan | `AlwaysInstallElevated = 0` | **Tenable PASSED at 7:24 PM** |
 
 ## Skills Demonstrated
 
