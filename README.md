@@ -15,8 +15,9 @@ Hands-on Windows 11 security hardening portfolio demonstrating DISA STIG complia
 | 7 | [WN11-CC-000315](WN11-CC-000315/) | Disable Windows Installer elevated privileges |
 | 8 | [WN11-CC-000205](WN11-CC-000205/) | Configure Windows diagnostic data collection |
 | 9 | [WN11-CC-000040](WN11-CC-000040/) | Disable insecure SMB guest logons |
+| 10 | [WN11-CC-000170](WN11-CC-000170/) | Allow Microsoft accounts to be optional |
 
-**Progress:** 9 of 10 technical remediations completed and documented with Tenable evidence.
+**Progress:** 10 of 10 technical remediations verified by Tenable. STIG #10 screenshot upload and link verification pending.
 
 ## Methodology
 
