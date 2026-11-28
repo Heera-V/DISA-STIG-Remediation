@@ -13,7 +13,11 @@ Hands-on Windows 11 security hardening portfolio demonstrating DISA STIG complia
 | 5 | [WN11-CC-000066](WN11-CC-000066/) | Include command line in process creation events |
 | 6 | [WN11-CC-000330](WN11-CC-000330/) | Disable WinRM Client Basic authentication |
 
-**Progress:** 6 of 10 technical remediations completed. For STIG #6, evidence screenshot uploads are still pending.
+**Progress:** 6 of 10 remediations fully verified; STIG #7 has completed manual and PowerShell remediation, with its final Tenable rescan pending.
+
+## In Progress
+
+- [STIG #7 — WN11-CC-000315: Disable Windows Installer elevated privileges](WN11-CC-000315/) — PowerShell remediation executed; final Tenable verification and screenshot uploads pending
 
 ## Methodology
 
