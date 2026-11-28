@@ -70,7 +70,7 @@ try {
 
     $actualKind = (Get-Item -Path $registryPath).GetValueKind($valueName)
 
-    Write-Host `nVerification Results:" -ForegroundColor Cyan
+    Write-Host "`nVerification Results:" -ForegroundColor Cyan
     Write-Host "Registry Path : $registryPath"
     Write-Host "Value Name    : $valueName"
     Write-Host "Value Type    : $actualKind"
@@ -81,10 +81,10 @@ try {
         throw "Remediation verification failed."
     }
 
-    Write-Host `nRemediation completed successfully." -ForegroundColor Green
+    Write-Host "`nRemediation completed successfully." -ForegroundColor Green
     Write-Host "Windows diagnostic data is set to Required."
 }
 catch {
-    Write-Host `nRemediation FAILED: $($_.Exception.Message)" -ForegroundColor Red
+    Write-Host "`nRemediation FAILED: $($_.Exception.Message)" -ForegroundColor Red
     exit 1
 }
